@@ -1,0 +1,159 @@
+@media screen and (max-width: 1280px) {
+    body {
+        height: 150%;
+        width: 100%;
+    }
+    section.controller {
+        background-color: var(--Light-Gray);
+        position: relative;
+        height: 140vh;
+        width: 100%;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    .filter {
+        background: linear-gradient(0deg, var(--Light-Gray) 5%, hsla(240, 5%, 20%, 0.102) 97%);
+        height: 50vh;
+        width: 100%;
+    }
+    .ui-interface {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        bottom: 0;
+        overflow: hidden;
+        background: var(--Dark-Gray);
+        box-shadow: 0 0 15px hsla(0, 0%, 0%, 0.5);
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        height: 100vh;
+        width: 100%;
+    }
+    .informations {
+        grid-row: 1;
+        grid-column: 2/5;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+    }
+    .onoff {
+        grid-row: 1;
+        grid-column: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--Red);
+    }
+    .onoff.on {
+        color: var(--Green);
+    }
+    .numbers {
+        grid-row: 5/9;
+        grid-column: 2/5;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .numbers div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+    .arrows {
+        grid-row: 2/5;
+        grid-column: 2/5;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .arrows div:not(.corner) {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .arrows div:not(.corner):hover,
+    .numbers div:hover,
+    .onoff:hover,
+    .menu-button:hover {
+        background-color: var(--Hover-Gray);
+        border-radius: 25px;
+    
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+    }
+    .menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+    .menu-display {
+        background-color: var(--Dark-Gray);
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 15;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        overflow: hidden;
+        transition: transform .5s ease;
+    
+        -webkit-transition: transform .5s ease;
+        -moz-transition: transform .5s ease;
+        -ms-transition: transform .5s ease;
+        -o-transition: transform .5s ease;
+    }
+    .flex-menu {
+        grid-row: 2/9;
+        grid-column: 1/9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex-menu a {
+        color: #fff;
+        padding: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex-menu a.selected:before,
+    .flex-menu a.selected:after,
+    .flex-menu a:hover:before,
+    .flex-menu a:hover:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 10px;
+        background-color: #fff;
+    }
+    .flex-menu a.selected:before,
+    .flex-menu a:hover:before {
+        left: -10px;
+    }
+    .flex-menu a.selected:after,
+    .flex-menu a:hover:after {
+        right: -10px;
+    }
+    .menu-display.closed {
+        transform: translateX(-100vw);
+    
+        -webkit-transform: translateX(-100vw);
+        -moz-transform: translateX(-100vw);
+        -ms-transform: translateX(-100vw);
+        -o-transform: translateX(-100vw);
+    }
+}

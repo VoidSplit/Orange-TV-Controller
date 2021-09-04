@@ -1,0 +1,7 @@
+:root {
+    --Light-Gray: hsl(240, 5%, 20%);
+    --Dark-Gray: hsl(240, 5%, 16%);
+    --Hover-Gray: hsl(240, 6%, 24%);
+    --Red: hsl(13, 82%, 44%);
+    --Green: hsl(120, 60%, 49%);
+}

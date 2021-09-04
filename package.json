@@ -1,0 +1,26 @@
+{
+  "name": "tv",
+  "version": "1.0.0",
+  "description": "tv controller",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VoidSplit/Orange-TV-Controller.git"
+  },
+  "keywords": [
+    "tv"
+  ],
+  "author": "VoidSplit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VoidSplit/Orange-TV-Controller/issues"
+  },
+  "homepage": "https://github.com/VoidSplit/Orange-TV-Controller#readme",
+  "dependencies": {
+    "cors-anywhere": "^0.4.4",
+    "express": "^4.17.1"
+  }
+}
